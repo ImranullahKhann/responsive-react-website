@@ -4,10 +4,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=New+Rocker&family=Updock&display=swap');
 
-.updock-regular {
+
+.updock-bold {
   font-family: "Updock", cursive;
-  font-weight: 400;
-  font-style: bold;
+  font-weight: 800;
 }
 
 * {
@@ -36,4 +36,15 @@ h4 {
 
 h5 {
     @apply text-xl;
+}
+
+body {
+    @apply bg-black;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
 }
