@@ -5,7 +5,7 @@ import linksData from "./linksData.js";
 
 const Footer = () => {
     return (
-        <footer className="text-white bg-red-800 w-full px-10 py-5">
+        <footer className="text-white bg-red-800 w-full px-32 py-5">
             <section className="flex justify-between mb-8">
                 <div className="">
                     <Logo />

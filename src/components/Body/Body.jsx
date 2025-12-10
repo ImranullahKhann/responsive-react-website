@@ -1,7 +1,9 @@
+import Hero from "../Common/Hero.jsx"
+
 const Body = () => {
     return (
-        <main>
-
+        <main className="text-white">
+            <Hero />            
         </main>
     )
 }

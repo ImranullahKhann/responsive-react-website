@@ -47,4 +47,5 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 3rem;
+    position: relative;
 }
