@@ -1,15 +1,39 @@
 import "./App.css"
-import Header from "./components/Header/Header.jsx"
-import Footer from "./components/Footer/Footer.jsx"
-import Body from "./components/Body/Body.jsx"
+import Layout from "./components/Layout.jsx"
+import { Home, AboutUs, Services, ContactUs } from "./components/Body"
+import {
+  createBrowserRouter,
+  RouterProvider
+} from "react-router-dom"
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Layout />, 
+    children: [
+      {
+        path: "",
+        element: <Home /> 
+      },
+      {
+        path: "about",
+        element: <AboutUs /> 
+      },
+      {
+        path: "services",
+        element: <Services /> 
+      },
+      {
+        path: "contact",
+        element: <ContactUs /> 
+      }
+    ]
+  }
+])
 
 function App() {
   return (
-    <>
-      <Header />
-      <Body />
-      <Footer />
-    </>  
+    <RouterProvider router={router} />
   )
 }
 
