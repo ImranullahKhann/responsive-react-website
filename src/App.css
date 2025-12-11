@@ -41,3 +41,11 @@ h5 {
 body {
     @apply bg-black;
 }
+
+.card> div{
+    transition: all 0.3s ease-in-out;
+}
+
+.card:hover>div:nth-child(1) {
+    transform: scale(105%);
+}
