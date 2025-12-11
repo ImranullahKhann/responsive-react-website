@@ -15,10 +15,10 @@ const Header = () => {
             </div>
             <nav className={`lg:h-full  ${active ? "active" : ""}`}>
                 
-                <NavButton name="Home" link="/" />
-                <NavButton name="About Us" link="/about" />
-                <NavButton name="Services" link="/services" />
-                <NavButton name="Contact Us" link="/contact" />
+                <NavButton name="Home" link="/" changeActive={setActive} />
+                <NavButton name="About Us" link="/about" changeActive={setActive} />
+                <NavButton name="Services" link="/services" changeActive={setActive} />
+                <NavButton name="Contact Us" link="/contact" changeActive={setActive} />
             </nav>
         </header>
     )
