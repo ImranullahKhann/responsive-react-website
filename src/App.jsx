@@ -29,7 +29,9 @@ const router = createBrowserRouter([
       }
     ]
   }
-])
+], {
+  basename: "/responsive-react-website", 
+})
 
 function App() {
   return (
