@@ -8,7 +8,7 @@ import imgFive from "@/assets/pics (5).jpg"
 export default function RecentDestinations () {
     return (
         <section className="flex flex-col items-center my-10 gap-10">
-            <h2>Recent Destinations</h2>
+            <h2 className="text-center">Recent Destinations</h2>
             <RecentCard imgOne={imgOne} imgTwo={imgTwo}/>
             <RecentCard imgOne={imgTwo} imgTwo={imgThree}/>
             <RecentCard imgOne={imgFour} imgTwo={imgFive} />

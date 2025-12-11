@@ -5,8 +5,8 @@ import linksData from "./linksData.js";
 
 const Footer = () => {
     return (
-        <footer className="text-white bg-red-800 w-full px-32 py-5">
-            <section className="flex justify-between mb-8">
+        <footer className="text-white bg-red-800 w-full px-16 py-5">
+            <section className="flex justify-between mb-8 flex-wrap gap-3">
                 <div className="">
                     <Logo />
                     <p>See the World</p>
@@ -18,7 +18,7 @@ const Footer = () => {
                     <SocialLink iconClass="fa-brands fa-square-x-twitter"/>
                 </div>
             </section>
-            <section className="flex justify-between">
+            <section className="flex gap-5 justify-between flex-wrap">
                 <FooterLinks title={linksData[0].title} links={linksData[0].links}/>
                 <FooterLinks title={linksData[1].title} links={linksData[1].links}/>
                 <FooterLinks title={linksData[2].title} links={linksData[2].links}/>
