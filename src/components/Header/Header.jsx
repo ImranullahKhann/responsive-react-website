@@ -5,6 +5,11 @@ import { useState } from "react"
 const Header = () => {
     let [active, setActive] = useState(true);
 
+    function handleClick () {
+        setActive(state => !state);
+        window.scrollTo(0, 0);
+    }
+
     return (
         <header className="top-10 flex w-10/12 justify-between bg-red-800 text-white px-10 h-20 rounded-xl z-10 fixed" style={{marginLeft: "50%", transform: "translateX(-50%)"}}>
             <Logo />
@@ -13,12 +18,12 @@ const Header = () => {
                     <div className="bg-white w-10 h-1 rounded-md"></div>
                     <div className="bg-white w-10 h-1 rounded-md"></div>
             </div>
-            <nav className={`lg:h-full  ${active ? "active" : ""}`}>
+            <nav className={`lg:h-full  ${active ? "active" : ""}`} onClick={ handleClick }>
                 
-                <NavButton name="Home" link="/" changeActive={setActive} />
-                <NavButton name="About Us" link="/about" changeActive={setActive} />
-                <NavButton name="Services" link="/services" changeActive={setActive} />
-                <NavButton name="Contact Us" link="/contact" changeActive={setActive} />
+                <NavButton name="Home" link="/" />
+                <NavButton name="About Us" link="/about" />
+                <NavButton name="Services" link="/services" />
+                <NavButton name="Contact Us" link="/contact" />
             </nav>
         </header>
     )
