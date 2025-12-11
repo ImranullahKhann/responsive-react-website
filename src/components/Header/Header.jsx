@@ -3,7 +3,7 @@ import Logo from "../Common/Logo.jsx"
 import { useState } from "react"
 
 const Header = () => {
-    let [active, setActive] = useState(false);
+    let [active, setActive] = useState(true);
 
     return (
         <header className="top-10 flex w-10/12 justify-between bg-red-800 text-white px-10 h-20 rounded-xl z-10 fixed" style={{marginLeft: "50%", transform: "translateX(-50%)"}}>
