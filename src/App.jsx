@@ -30,7 +30,7 @@ const router = createBrowserRouter([
     ]
   }
 ], {
-  basename: "/responsive-react-website", 
+  basename: import.meta.env.BASE_URL, 
 })
 
 function App() {
